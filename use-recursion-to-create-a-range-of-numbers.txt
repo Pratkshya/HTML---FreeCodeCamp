@@ -1,0 +1,22 @@
+** start of script.js **
+
+function rangeOfNumbers(startNum, endNum) {
+  if (startNum > endNum){
+    return [];
+  }else{
+    const arr = rangeOfNumbers(startNum + 1, endNum);
+    arr.unshift(startNum);
+  return arr;
+  }
+   
+};
+
+/*(1,4) = [1,2,3,4]
+start+1
+
+
+*/
+
+
+** end of script.js **
+
