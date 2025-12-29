@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    color:rgb(156, 171, 132);
+}
+
+h1{
+    text-align:center;
+    color:rgb(255, 213, 134);
+}
+
+.container{
+    max-width: 400px;
+    margin: 0 auto; /* tbrl */
+    background-color: #fff;
+    padding: 20px;
+}
+
+.todo-list{
+  list-style-type: none;
+  padding: 0;
+}
+
+.sub-item {
+    list-style-type: square;
+}
+
+.todo-list li{
+    margin-bottom: 25px;
+    line-height: 1.7;
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sub-item-link{
+    text-decoration:none;
+    color:rgb(255, 100, 180);
+}
+
+.sub-item-link:visited{
+    color:rgb(94, 171, 214);
+}
+
+.sub-item-link:hover{
+    color:rgb(255, 180, 180);
+}
+
+.sub-item-link:focus{
+    color:rgb(225, 68, 52);
+    outline: 1px solid rgb(216, 201, 167);
+}
+
+.sub-item-link:active{
+    color:rgb(254, 234, 201);
+}
