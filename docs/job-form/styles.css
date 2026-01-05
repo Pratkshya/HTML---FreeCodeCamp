@@ -1,0 +1,91 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 3px 3px 7px 6px rgb(199, 198, 198);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: green;
+  outline: none;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+input:first-of-type {
+  border-radius: 12px;
+}
+
+.radio-group {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #999;
+}
+
+.radio-group input[type="radio"]:checked {
+  background-color: green;
+  border: 2px solid green;
+  box-shadow: 0 0 5px green;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: green;
+  font-weight: bold;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: green;
+  border: 2px solid green;
+  font-weight: bold;
+}
+
+/* Hover */
+button:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
