@@ -1,0 +1,110 @@
+:root {
+  /* Color Palette */
+  --bg-color: #F0FFDF;       /* Lightest Green/White */
+  --sidebar-color: #A8DF8E;  /* Soft Green */
+  --accent-pink: #F875AA;    /* Darker Pink */
+  --light-pink: #FFD8DF;     /* Soft Pink */
+  --text-main: #000;      /* Dark grey for readability */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  display: flex;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--sidebar-color);
+  border-right: 3px solid var(--accent-pink);
+}
+
+#navbar header {
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+#navbar ul {
+  padding: 0;
+  margin: 0;
+}
+
+#navbar ul li {
+  font-size: 1.1rem;
+  list-style: none;
+  margin: 0;
+  border-bottom: 1px solid var(--light-pink);
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: var(--text-main);
+  display: block;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+#navbar ul li a:hover {
+  background-color: var(--light-pink);
+  padding-left: 15px;
+}
+
+#main-doc {
+  margin-left: 340px;
+  padding: 20px;
+  max-width: 800px;
+}
+
+.main-section header {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 20px;
+  color: var(--accent-pink);
+}
+
+code {
+  display: block;
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 5px solid var(--sidebar-color);
+  border-radius: 4px;
+  line-height: 2.5;
+  font-family: 'Courier New', Courier, monospace;
+}
+@media (max-width: 768px) {
+  #navbar {
+    position: relative; /* Un-fixes it from the side */
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 3px solid var(--accent-pink);
+  }
+
+  #navbar ul {
+    height: 200px; /* Limits height so user can see content */
+    overflow-y: scroll;
+    border-top: 1px solid var(--light-pink);
+  }
+
+  #main-doc {
+    margin-left: 0; /* Content takes full width */
+    padding: 20px;
+  }
+}
